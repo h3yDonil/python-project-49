@@ -2,6 +2,9 @@ import prompt
 import random
 
 
+def play_even():
+    game_loop()
+
 def greet():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -13,7 +16,7 @@ def print_rules():
 
 
 def print_question():
-    random_number = random.uniform(1,100)
+    random_number = random.randint(1,100)
     print(f'Question: {random_number}')
 
 
